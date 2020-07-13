@@ -18,6 +18,18 @@ $main-color: #20b2aa;
   padding: 0;
 }
 
+ol, ul {
+  list-style: none !important;
+}
+a {
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
 img {
   width: 100%;
 }
@@ -54,18 +66,6 @@ section {
 
 .tag {
   @include tag();
-}
-
-ol, ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: #000;
-
-  &:hover {
-    opacity: 0.7;
-  }
 }
 
 @media (max-width: 767px) {

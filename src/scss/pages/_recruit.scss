@@ -1,0 +1,30 @@
+@import "../partials/config";
+@import "../partials/mixin";
+
+.el_lv2Heading {
+  color: $main-color;
+  text-align: center;
+  font-size: 40px;
+}
+.el_leadText {
+  text-align: center;
+}
+
+.el_lv3Heading {
+
+  &::before {
+    content: "";
+    border-left: 4px solid $main-color;
+    margin-right: 10px;
+  }
+}
+
+.ly_midCareer {
+  background-color: gainsboro;
+
+}
+
+.ly_apply {
+  background-color: $main-color;
+  color: #fff;
+}
