@@ -233,30 +233,25 @@
     display: block;
     height: 5px;
     transition: all 0.4s;
-    border-radius: 20px;
-    background: $main-color;
-  }
-  .nav_area_sp span:nth-of-type(2) {
-    margin: 8px auto;
-  }
-  .nav_area_sp span {
-    display: block;
-    height: 5px;
-    transition: all 0.4s;
     border-radius: 4px;
     background: #fff;
+
+    &:nth-of-type(2) {
+      margin: 8px auto;
+    }
   }
   .nav_area_sp .nav_buttom.active span {
     background: $main-color;
-  }
-  .nav_area_sp .nav_buttom.active span:first-of-type {
-    transform: translateY(13px) rotate(-315deg);
-  }
-  .nav_area_sp .nav_buttom.active span:nth-of-type(2) {
-    opacity: 0;
-  }
-  .nav_area_sp .nav_buttom.active span:last-of-type {
-    transform: translateY(-13px) rotate(315deg);
+
+    &:first-of-type {
+      transform: translateY(13px) rotate(-315deg);
+    }
+    &:nth-of-type(2) {
+      opacity: 0;
+    }
+    &:last-of-type {
+      transform: translateY(-13px) rotate(315deg);
+    }
   }
 
   .nav_area_sp nav {

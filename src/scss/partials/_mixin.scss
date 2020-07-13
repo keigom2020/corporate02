@@ -6,24 +6,6 @@
 }
 
 @mixin btn(
-  $bg: blue
-) {
-  background-color: $bg;
-  padding: 10px 8px;
-  display: block;
-}
-
-@mixin card() {
-  display: flex;
-  flex-wrap: wrap;
-
-  &__component {
-    box-shadow: 0 0 5px 0 #cecece;
-    width: calc((100% / 3) - 10px);
-  }
-}
-
-@mixin btn(
   $bg: transparent,
   $color: #fff
 ) {
@@ -40,6 +22,16 @@
     background: #000;
     color: #fff;
     transition: all 0.4s;
+  }
+}
+
+@mixin card() {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__component {
+    box-shadow: 0 0 5px 0 #cecece;
+    width: calc((100% / 3) - 10px);
   }
 }
 
