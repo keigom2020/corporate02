@@ -19,12 +19,49 @@
   }
 }
 
+.ly_entry {
+  .card {
+    li {
+      width: calc((100% / 2 ) - 20px);
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+
+
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
+.bl_cardTextBox {
+  width: 70%;
+  padding: 20px 20px;
+  position: relative;
+  margin-top: -60px;
+  background-color: #fff;
+  z-index: 2;
+}
+.el_boxTtl {
+  font-size: 24px;
+}
+.el_boxText {
+  padding-left: 1em;
+}
+
 .ly_midCareer {
   background-color: gainsboro;
-
 }
 
 .ly_apply {
   background-color: $main-color;
   color: #fff;
+
+  .el_lv3Heading {
+    &::before {
+      border-left: 4px solid #fff;
+    }
+  }
 }
