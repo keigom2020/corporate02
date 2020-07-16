@@ -1,5 +1,6 @@
 @import "../partials/config";
 @import "../partials/mixin";
+@import "../partials/cover_slide";
 
 .el_lv2Heading {
   color: $main-color;
@@ -64,3 +65,12 @@
     }
   }
 }
+
+
+// .card {
+//   a {
+//     &:hover {
+
+//     }
+//   }
+// }

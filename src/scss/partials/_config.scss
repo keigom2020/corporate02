@@ -18,16 +18,16 @@ $main-color: #20b2aa;
   padding: 0;
 }
 
-ol, ul {
-  list-style: none !important;
+ol, ul, li {
+  list-style-type: none;
 }
 a {
   text-decoration: none;
   color: #000;
 
-  &:hover {
-    opacity: 0.7;
-  }
+  // &:hover {
+  //   opacity: 0.7;
+  // }
 }
 
 img {
