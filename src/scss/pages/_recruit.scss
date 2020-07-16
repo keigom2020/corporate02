@@ -2,21 +2,52 @@
 @import "../partials/mixin";
 @import "../partials/cover_slide";
 
+section {
+  padding: 50px 0;
+}
+
+.el_tag {
+  border: 1px solid #000;
+  padding: 4px 8px;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.bl_imgBox {
+  max-height: 300px;
+}
+
 .el_lv2Heading {
   color: $main-color;
   text-align: center;
   font-size: 40px;
+  margin-bottom: 30px;
 }
 .el_leadText {
   text-align: center;
+  font-size: 16px;
+  display: block;
+  color: #000;
+  margin-top: 10px;
 }
 
 .el_lv3Heading {
+  margin-bottom: 30px;
 
   &::before {
     content: "";
     border-left: 4px solid $main-color;
     margin-right: 10px;
+  }
+}
+
+.ly_mv {
+  .btn {
+    @include btn(
+      transparent,
+      #fff,
+      20px 0
+    );
   }
 }
 
@@ -51,8 +82,37 @@
   padding-left: 1em;
 }
 
+.ly_event {
+  background-color: gainsboro;
+  .card {
+    li {
+      &:first-child {
+        width: 60%;
+        margin-right: 40px;
+      }
+      &:nth-child(2n) {
+        // width: 40%;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 .ly_midCareer {
   background-color: gainsboro;
+
+  .card {
+    li {
+      &:first-child {
+        width: 60%;
+        margin-right: 40px;
+      }
+      &:nth-child(2n) {
+        // width: 40%;
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 .ly_apply {
@@ -63,6 +123,29 @@
     &::before {
       border-left: 4px solid #fff;
     }
+  }
+
+  .btn {
+    @include btn(
+      $main-color,
+      #fff,
+      16px 0
+    )
+  }
+}
+
+.ly_service {
+  .card {
+    li {
+      width: calc((100% / 3) - 20px);
+      margin-right: 30px;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+
+
   }
 }
 
