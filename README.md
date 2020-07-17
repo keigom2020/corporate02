@@ -10,7 +10,8 @@
 - 下層ページの作成
 - metaタグの設定
 - ローダーアニメーションの設定
-- ページ毎にheader, footer切替
+- recruit用のheader,footerを作成して読込みする
+- scss　記述をまとめる　リファクタリング
 
 # gulp参考サイト
 https://ics.media/entry/3290/
