@@ -30,9 +30,9 @@ $(function(){
       $(document).ready(function () {
         if (window.matchMedia( '(max-width: 767px),(min-width: 768px)' ).matches) {
           hsize = $('header').height();
-          $(".content").css("padding-top", hsize + "px");
+          $(".ly_content").css("padding-top", hsize + "px");
         }else {
-          $(".content").removeAttr('style');
+          $(".ly_content").removeAttr('style');
         }
       });
     });
