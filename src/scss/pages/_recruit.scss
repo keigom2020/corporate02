@@ -300,18 +300,18 @@ section {
   }
 }
 
+.topBg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 320px;
+  background: $main-color;
+  z-index: -10;
+}
+
 #fresh {
   position: relative;
-
-  .topBg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 320px;
-    background: $main-color;
-    z-index: -10;
-  }
 
   section {
     display: flex;
@@ -379,6 +379,38 @@ section {
   }
 }
 
+#midcareer {
+  .ly_heading {
+    background-image: url(/img/midcareer_heading01.jpg);
+    background: {
+      size: cover;
+    }
+  }
+}
+
+#midcareer {
+  position: relative;
+
+  section {
+    display: flex;
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+  .el_lv2Heading {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    margin-left: 80px;
+    text-align: left;
+    z-index: 1;
+  }
+  .el_lv3Heading {
+    color: #fff;
+  }
+}
+
 @media (max-width: 767px) {
   #fresh {
     .topBg {
@@ -411,7 +443,6 @@ section {
 
     padding: 20px 0;
   }
-
 
   @keyframes stretchRod {
     0% {
