@@ -105,6 +105,8 @@ img {
     z-index: 1;
     transition: backgorund-color 0.3s ease;
     pointer-events: none;
+    
+    background: rgba(0, 0, 0, 0.3);
 
     @include animation(
       $name: kf-img-show,

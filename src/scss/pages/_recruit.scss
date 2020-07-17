@@ -42,6 +42,23 @@ section {
   }
 }
 
+.el_lv4Heading {
+  // position: absolute;
+  // bottom: 12%;
+  // left: 4%;
+  font-size: 30px;
+  color: #fff;
+  z-index: 2;
+  text-shadow: 1px 1px 1px grey;
+
+  .ruby {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
 .ly_mv {
   .btn {
     @include btn(
@@ -75,6 +92,7 @@ section {
   margin-top: -60px;
   background-color: #fff;
   z-index: 2;
+  box-sizing: border-box;
 }
 .el_boxTtl {
   font-size: 24px;
@@ -95,6 +113,24 @@ section {
         // width: 40%;
         margin-right: 0;
       }
+
+      position: relative;
+
+      .el_lv4Heading {
+        position: absolute;
+        bottom: 12%;
+        left: 4%;
+        color: #fff;
+        z-index: 2;
+        text-shadow: 1px 1px 1px grey;
+
+        .ruby {
+          color: #fff;
+          font-size: 20px;
+          margin-top: 10px;
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
@@ -112,12 +148,25 @@ section {
         // width: 40%;
         margin-right: 0;
       }
+
+      position: relative;
+
+      .el_lv4Heading {
+        position: absolute;
+        bottom: 16%;
+        left: 4%;
+
+        .ruby {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
 
 .ly_apply {
-  background-color: $main-color;
+  // background-color: $main-color;
+  background: radial-gradient($main-color, #000);
   color: #fff;
 
   .el_lv3Heading {
@@ -144,14 +193,32 @@ section {
       &:nth-child(3n) {
         margin-right: 0;
       }
+      position: relative;
     }
+  }
 
-
+  .bl_cardTextBox {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
   }
 }
 
 
 @media (max-width: 767px) {
+  .el_strecheRod {
+    height: 8vh;
+  }
+
+  .el_lv2Heading {
+    font-size: 24px;
+  }
+
+  .el_lv4Heading {
+    font-size: 18px;
+  }
   .ly_entry {
     .card {
       li {
@@ -166,6 +233,28 @@ section {
         width: 100%;
         margin-right: 0;
 
+      }
+    }
+  }
+
+  .ly_event {
+    .card {
+      li {
+        &:first-child {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .ly_midCareer {
+    .card {
+      li {
+        &:first-child {
+          width: 100%;
+          margin-right: 0;
+        }
       }
     }
   }
@@ -208,5 +297,22 @@ section {
   100% {
     height: 15vh;
     transform: translate(0, 15vh); 
+  }
+}
+
+@media (max-width: 767px) {
+
+
+  @keyframes stretchRod {
+    0% {
+      height: 0; 
+    }
+    50% {
+      height: 8vh;
+    }
+    100% {
+      height: 8vh;
+      transform: translate(0, 8vh); 
+    }
   }
 }

@@ -58,7 +58,7 @@ $(function(){
   // スクロール時に追従分の高さを取る
     let headerNav = $(".nav.forPc").outerHeight();
     let headerHight = $("header").outerHeight();
-      $("a").click(function() {
+    $("a").click(function() {
       if (window.matchMedia( '(min-width: 768px)' ).matches) {
         let href = $(this).attr("href");
         let target = $(href == "#" || href == "" ? "body" : href);
@@ -96,8 +96,8 @@ $(function(){
         }
       } else {
         topScroll.css({
-        "position": "fixed",
-        "bottom": 10
+          "position": "fixed",
+          "bottom": 10
         });
       }
     });

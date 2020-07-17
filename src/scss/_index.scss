@@ -79,7 +79,8 @@ section {
   .btn {
     @include btn(
       transparent,
-      #000
+      #000,
+      10px 0
     );
     border: 1px solid #000;
   }
@@ -174,7 +175,8 @@ section {
   .btn {
     @include btn(
       transparent,
-      #000
+      #000,
+      10px 0
     );
     border: 1px solid #000;
   }

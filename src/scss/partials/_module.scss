@@ -102,11 +102,13 @@
 .topScroll {
   display: block;
   right: 30px;
-  background-color: $main-color;
+  // background-color: $main-color;
+  background: radial-gradient($main-color, #000);
   color: #fff;
   border-radius: 50%;
   width: 60px;
   height: 60px;
+  transition: all 0.2s;
 
   span {
     position: absolute;
@@ -233,7 +235,7 @@
     display: block;
     height: 5px;
     transition: all 0.4s;
-    border-radius: 4px;
+    border-radius: 2px;
     background: #fff;
 
     &:nth-of-type(2) {
