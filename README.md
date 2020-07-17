@@ -7,10 +7,10 @@
 
 # 今後実装したいこと
 - fadeInなどのアニメーション
-- カバースライド、hover時拡大演出
 - 下層ページの作成
 - metaタグの設定
 - ローダーアニメーションの設定
+- ページ毎にheader, footer切替
 
 # gulp参考サイト
 https://ics.media/entry/3290/
