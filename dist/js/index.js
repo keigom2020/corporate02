@@ -1,16 +1,16 @@
 // slick
-$(document).ready(function(){
-  $('.single').slick({
-    autoplay: true,
-    dots: false,
-    slidesToShow: 3,
-    infinite: true,
-    centerMode: true,
-    speed: 100,
-    slidesToScroll: 3,
-    dotsClass: 'slide-dots'
-  });
-});
+// $(document).ready(function(){
+//   $('.single').slick({
+//     autoplay: true,
+//     dots: false,
+//     slidesToShow: 3,
+//     infinite: true,
+//     centerMode: true,
+//     speed: 100,
+//     slidesToScroll: 3,
+//     dotsClass: 'slide-dots'
+//   });
+// });
 
 // modal.js
 // $(function(){
@@ -56,24 +56,24 @@ $(function(){
     });
   
   // スクロール時に追従分の高さを取る
-    var headerNav = $(".nav.forPc").outerHeight();
-    var headerHight = $("header").outerHeight();
+    let headerNav = $(".nav.forPc").outerHeight();
+    let headerHight = $("header").outerHeight();
       $("a").click(function() {
       if (window.matchMedia( '(min-width: 768px)' ).matches) {
-        var href = $(this).attr("href");
-        var target = $(href == "#" || href == "" ? "body" : href);
-        var position = target.offset().top - headerNav;
+        let href = $(this).attr("href");
+        let target = $(href == "#" || href == "" ? "body" : href);
+        let position = target.offset().top - headerNav;
         $("html, body").animate({ scrollTop: position }, 500, "swing");
-    } else {
-        var href = $(this).attr("href");
-        var target = $(href == "#" || href == "" ? "body" : href);
-        var position = target.offset().top - headerHight;
+      } else {
+        let href = $(this).attr("href");
+        let target = $(href == "#" || href == "" ? "body" : href);
+        let position = target.offset().top - headerHight;
         $("html, body").animate({ scrollTop: position }, 500, "swing");
-    }
-  });
+      }
+    });
   
   // スムーススクロール
-    var topScroll = $('.topScroll');
+    let topScroll = $('.topScroll');
     topScroll.hide();
     $(window).on("scroll", function() {
       if ($(this).scrollTop() > 100) {
@@ -81,9 +81,9 @@ $(function(){
       } else {
         topScroll.fadeOut("400");
       }
-    scrollHeight = $(document).height();
-    scrollPosition = $(window).height() + $(window).scrollTop();
-    footHeight = $("footer").innerHeight() + $(".nav.forPc").height();//止めたい位置
+        scrollHeight = $(document).height();
+        scrollPosition = $(window).height() + $(window).scrollTop();
+        footHeight = $("footer").innerHeight() + $(".nav.forPc").height();//止めたい位置
       if (scrollHeight - scrollPosition <= footHeight ) {
         topScroll.css({
           "position": "absolute",
@@ -113,10 +113,10 @@ $(function(){
 
 $(function(){
   $('a[href^="#"]').click(function() {
-    var speed = 500;
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
+    let speed = 500;
+    let href= $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top;
     $('body,html').animate({scrollTop:position}, speed, 'swing');
       return false;
   });
