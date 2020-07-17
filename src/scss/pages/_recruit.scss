@@ -300,6 +300,68 @@ section {
   }
 }
 
+#fresh {
+  position: relative;
+
+  .topBg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: $main-color;
+  }
+
+  section {
+    display: flex;
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+  .el_lv2Heading {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    margin-left: 80px;
+    text-align: left;
+    z-index: 1;
+  }
+  .el_lv3Heading {
+    color: #fff;
+  }
+}
+
+.ly_heading {
+  background-image: url(/img/fresh_heading01.jpg);
+  margin-top: 40px;
+}
+
+.ly_postingTtl {
+  
+  .ly_col {
+    width: 50%;
+    background-color: $main-color;
+    position: relative;
+
+    .bl_centerBox {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .btn {
+        @include btn(
+          #fff,
+          $main-color,
+          10px 0
+        );
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
 
 
