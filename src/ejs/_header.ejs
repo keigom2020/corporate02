@@ -14,11 +14,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title><%= page['title'] %></title>
   <meta name="description" content="<%= page['description'] %>">
+  <meta name="keywords" content="<%= page['keywords'] %>">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<%= page['site_name'] %>">
+  <meta property="og:site_name" content="<%= page['site_name'] %>">
+  <meta property="og:url" content="<%= page['url'] %>">
+  <meta property="og:description" content="<%= page['description'] %>">
+  <meta property="og:locale" content="ja_JP">
+
+  <meta name="twitter:title" content="<%= page['twitter_title'] %>">
+  <meta name="twitter:description" content="<%= page['twitter_description'] %>">
+  <meta name="twitter:image" content="<%= page['twitter_img'] %>">
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
+
+  <title><%= page['title'] %></title>
 </head>
 <body>
   <header class="header">

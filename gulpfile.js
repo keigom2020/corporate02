@@ -102,7 +102,7 @@ gulp.task('sass', function() {
 
 // ejsのコンパイル
 gulp.task('ejs', function() {
-  var json = JSON.parse(fs.readFileSync('src/ejs/meta.json')); 
+  const json = JSON.parse(fs.readFileSync('src/ejs/meta.json')); 
   const options = {
     indent_size: 2
   };
