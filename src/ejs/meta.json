@@ -6,5 +6,9 @@
   "top": {
     "title": "top",
     "description": "topディスクリプション！"
+  },
+  "recruit": {
+    "title": "recruit",
+    "description": "recruitディスクリプション！"
   }
 }
