@@ -61,7 +61,7 @@ section {
   .sec__title {
     background: #fff;
   }
-  .inner {
+  .ly_inner {
     display: flex;
 
     .col {
@@ -88,7 +88,7 @@ section {
 
 // news
 .news {
-  .inner {
+  .ly_inner {
     display: flex;
     justify-content: space-between;
   }
@@ -228,7 +228,7 @@ section {
 
   // about
   .about {
-    .inner {
+    .ly_inner {
       flex-direction: column;
 
       .col {
@@ -237,7 +237,7 @@ section {
     }
   }
   .news {
-    .inner {
+    .ly_inner {
       flex-direction: column;
     }
 

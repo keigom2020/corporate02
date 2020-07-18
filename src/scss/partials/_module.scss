@@ -2,8 +2,8 @@
 // header
 
 .header {
-  .inner {
-    @include inner();
+  .ly_inner {
+    @include ly_inner();
   }
 }
 
@@ -15,7 +15,7 @@
   position: fixed;
   z-index: 10;
 
-  .inner {
+  .ly_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +81,7 @@
     color: #fff;
   }
 
-  .inner {
+  .ly_inner {
     display: flex;
     justify-content: space-between;
   }
@@ -120,7 +120,7 @@
 
 @media (max-width: 767px) {
   .header {
-    .inner {
+    .ly_inner {
       padding: 5% 6%;
       min-width: 100%;
     }
@@ -159,7 +159,7 @@
   // footer
 
   .footer {
-    .inner {
+    .ly_inner {
       flex-direction: column;
     }
 

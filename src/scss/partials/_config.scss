@@ -52,8 +52,8 @@ section {
   min-width: $content-width;
 }
 
-.inner {
-  @include inner();
+.ly_inner {
+  @include ly_inner();
 }
 
 .card {
@@ -75,8 +75,8 @@ section {
   .forSp {
     display: block;
   }
-  .inner {
-    @include inner(
+  .ly_inner {
+    @include ly_inner(
       100%
     );
     padding: 0 6%;
