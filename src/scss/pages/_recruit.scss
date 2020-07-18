@@ -165,7 +165,6 @@ section {
 }
 
 .ly_apply {
-  // background-color: $main-color;
   background: radial-gradient($main-color, #000);
   color: #fff;
 
@@ -206,7 +205,52 @@ section {
   }
 }
 
+// header
+#recruit {
+  .header {
+    display: flex;
+  }
+}
 
+.header {
+  display: flex;
+  .inner {
+    padding: 20px 0 20px 20px;
+  }
+
+  .btn {
+
+    &__entry {
+      margin-right: auto;
+
+      @include btn(
+        $main-color,
+        #fff,
+        10px 0
+      );
+      width: 100%;
+      height: auto;
+      margin-left: 100px;
+
+      // display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.nav {
+  ul {
+    li {
+      a {
+        &:before {
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+// footer
 .footer__left {
   display: flex;
   flex-direction: column;
@@ -218,7 +262,6 @@ section {
     font-size: 14px;
   }
 }
-
 
 .footer__right {
   display: flex;
@@ -249,7 +292,6 @@ section {
     }
   }
 }
-
 .footer__boxTtl {
   a {
     font-size: 18px;
