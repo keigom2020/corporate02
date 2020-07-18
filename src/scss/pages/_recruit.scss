@@ -213,7 +213,7 @@ section {
 }
 
 .header {
-  display: flex;
+  // display: flex;
   .ly_inner {
     padding: 20px 0 20px 20px;
   }
@@ -253,7 +253,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 24%;
   margin-right: 40px;
 
   a {
@@ -261,10 +260,18 @@ section {
   }
 }
 
+#recruit {
+  .footer__left {
+    width: 24%;
+  }
+  .footer__right {
+    width: 76%;
+  }
+}
+
 .footer__right {
   display: flex;
   justify-content: space-between;
-  width: 76%;
 }
 .footer__left__upper {
   ul {
