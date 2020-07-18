@@ -1,0 +1,10 @@
+{
+  "default": {
+    "title": "ページタイトル",
+    "description": "ディスクリプション！"
+  },
+  "top": {
+    "title": "top",
+    "description": "topディスクリプション！"
+  }
+}

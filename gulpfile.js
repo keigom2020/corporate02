@@ -102,14 +102,15 @@ gulp.task('sass', function() {
 
 // ejsのコンパイル
 gulp.task('ejs', function() {
-
+  var json = JSON.parse(fs.readFileSync('src/ejs/meta.json')); 
   const options = {
     indent_size: 2
   };
 
   return gulp
   .src([ paths.src.ejs, '!' + 'src/**/_*.ejs'])
-  .pipe(ejs({}, {}, { ext: '.html' }))
+  // .pipe(ejs({}, {}, { ext: '.html' }))
+  .pipe(ejs({ json: json }))
   .pipe(rename({ extname: '.html' }))
   .pipe(crlf({ changeCode: 'CR+LF' }))
   .pipe(htmlbeautify(options))
