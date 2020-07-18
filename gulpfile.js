@@ -66,9 +66,9 @@ gulp.task('sass', function() {
     })
   )
   .pipe(
-    sassGlob({
-      ignorePaths: ['']
-    })
+    sassGlob(
+      // {ignorePaths: ['']}
+    )
   )
   .pipe(
     sass({

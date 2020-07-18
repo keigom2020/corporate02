@@ -11,7 +11,6 @@
 - metaタグの設定
 - ローダーアニメーションの設定
 - scss　記述をまとめる　リファクタリング
-- gulp-sass-globで@import
 
 # gulp参考サイト
 https://ics.media/entry/3290/

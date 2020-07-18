@@ -1,13 +1,12 @@
 @import "mixin";
-// header
 
+// header
 .header {
   .ly_inner {
     @include ly_inner();
   }
 }
 
-// header
 .header {
   background: linear-gradient($main-color, #000);
   color: #fff;
