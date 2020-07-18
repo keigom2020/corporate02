@@ -221,8 +221,6 @@ section {
   .btn {
 
     &__entry {
-      margin-right: auto;
-
       @include btn(
         $main-color,
         #fff,
@@ -230,10 +228,10 @@ section {
       );
       width: 100%;
       height: auto;
-      margin-left: 100px;
-
-      // display: flex;
+      margin: 0 auto 0 100px;
+      display: flex;
       align-items: center;
+      justify-content: center;
     }
   }
 }
@@ -273,10 +271,6 @@ section {
     li {
       padding-right: 18px;
       border-right: 2px solid #fff;
-
-      // &:after {
-      //   content: "|";
-      // }
 
       &:last-child {
         border-right: none;
