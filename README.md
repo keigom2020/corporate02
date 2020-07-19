@@ -10,6 +10,14 @@
 - 下層ページの作成
 - ローダーアニメーションの設定
 - scss　記述をまとめる　リファクタリング
+- 採用ページ、ヘッダーhover時のサブナビゲーション実装
+
+# 備考
+## ルートパスについて
+- ルートパスの場合、ドメインの都合・サーバーアップ時での表示に必要のため、「/corporate02/」と頭に付けています。ブランチは「feature/serverup-test」です。
+- 通常のルートパスのブランチは「feature/0714」です。
+- [http://qlpt.sakura.ne.jp/corporate02/](http://qlpt.sakura.ne.jp/corporate02/)
+- [http://qlpt.sakura.ne.jp/corporate02/recruit/](http://qlpt.sakura.ne.jp/corporate02/recruit/)
 
 # gulp参考サイト
 https://ics.media/entry/3290/
