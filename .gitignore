@@ -1,23 +1,23 @@
 # dependencies
 node_modules
 
-# vscode and editors
+# vscode
 .vscode
 
-# System Files
+# System
 .DS_Store
 
 Thumbs.db
 
-# IDEs and editors
-.idea
-
 # Logs
 npm-debug.log*
 
-# Style Files
+# Style
 /dist/**/*.css.map
 
 /dist/css/*.css
 
 !/dist/js/
+
+# test
+test/
