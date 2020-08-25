@@ -15,7 +15,7 @@ npm-debug.log*
 # Style
 /dist/**/*.css.map
 
-/dist/css/*.css
+# /dist/css/*.css
 
 !/dist/js/
 
